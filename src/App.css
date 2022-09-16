@@ -1,6 +1,7 @@
 .App {
   /* text-align: center; */
   background-image: linear-gradient(50deg, rgb(9,18,40) 0%, rgb(9,19,38) 25%, rgb(19,28,33) 35%, rgb(20,29,33) 65%, rgb(7,13,25) 75%, rgb(20,29,33) 100%);
+  font-family: 'Raleway', sans-serif !important;
 
 }
 

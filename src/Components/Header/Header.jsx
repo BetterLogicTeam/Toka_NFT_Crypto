@@ -40,9 +40,9 @@ function Header() {
     };
   return (
     <div>
-        <AppBar position="fixed" sx={{backgroundColor: "rgb(8,18,40)"}}>
+        <AppBar position="fixed" sx={{backgroundImage: "linear-gradient(50deg, rgb(9,18,40) 0%, rgb(9,19,38) 25%, rgb(19,28,33) 35%, rgb(20,29,33) 65%, rgb(7,13,25) 100%)",boxShadow:"none",hover:"none"}}>
       <Container maxWidth="xl">
-        <Toolbar disableGutters>
+        <Toolbar >
           {/* <AdbIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} /> */}
           <Typography
             variant="h6"
@@ -198,9 +198,11 @@ function Header() {
           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' }, marginLeft: {md: "50px",lg: "190px"} }}>
             
           <Button
+          sx={{hover:"none"}}
               onClick={handleCloseNavMenu}
                >
-              <Tooltip title="">
+              <Tooltip title=""
+              sx={{pointerEvents:"none"}}>
               
               <IconButton onClick={handleOpenUserMenu} sx={{ p: 0, color: "white", fontSize: "15px", fontWeight: "600", marginRight: "20px" }}>
               NFT <KeyboardArrowDownIcon></KeyboardArrowDownIcon>
